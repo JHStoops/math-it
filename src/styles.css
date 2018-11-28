@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+.green-tint-text {
+  color: #e0efd4;
+}
+.green-key-text {
+  color: #7fd535;
+}
+.green-shade-text {
+  color: #439816;
+}
+.purple-contrast-text {
+  color: #682D63;
+}
+.blue-contrast-text {
+  color: #414288;
+}
+
+.green-tint-bg {
+  background-color: #e0efd4;
+}
+.green-key-bg {
+  background-color: #7fd535;
+}
+.green-shade-bg {
+  background-color: #439816;
+}
+.purple-contrast-bg {
+  background-color: #682D63;
+}
+.blue-contrast-bg {
+  background-color: #414288;
+}
