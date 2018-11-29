@@ -12,6 +12,7 @@ import { CompeteComponent } from './compete/compete.component';
 import { ProgressReportComponent } from './progress-report/progress-report.component';
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
 import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavComponent } from './nav/nav.component';
     CompeteComponent,
     ProgressReportComponent,
     QuizTestComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

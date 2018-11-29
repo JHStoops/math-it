@@ -8,8 +8,14 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { ProgressReportComponent } from './progress-report/progress-report.component';
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+    {
+        path: 'home',
+        component: HomeComponent,
+        data: {title: 'Home'}
+    },
     {
         path: 'compete',
         component: CompeteComponent,
