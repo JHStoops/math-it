@@ -1,0 +1,32 @@
+.grid {
+    display:grid;
+    grid-template-areas: 'classroom world';
+    grid-gap: 1.5em;
+    color: #8b35d5;
+    padding:12px;
+}
+
+.item {
+    padding:2em;
+    background-color: #a7e274;
+    border: 3px solid #5a9d21;
+    border-radius: 2em;
+    box-shadow: 6px 6px #8a35d554;
+	text-align: center;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item img {
+    width:45%;
+}
+
+.classroom {
+    grid-area: classroom;
+}
+.world {
+    grid-area: world;
+}
+

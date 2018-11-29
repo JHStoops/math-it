@@ -1,18 +1,40 @@
-.operation {
-  grid-area: op;
-  border-radius: 25px;
-  color: white;
-  border: 5px solid 	seagreen;
-  background-color: 	mediumseagreen;
-  padding: 20px;
+.grid {
+    display:grid;
+    grid-template-columns : 15em 15em;
+	grid-template-rows : 15em 15em;
+    grid-template-areas: 'addition subtraction'
+                          'multiplication division';
+    grid-gap: 1.5em;
+    color: #8b35d5;
+    padding:12px;
 }
 
-.operationContainer {
-  grid-template-columns: 200px 200px;
-  grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  grid-template-areas: 
-    "op op"
-    "op op"
+.item {
+    padding:2em;
+    background-color: #a7e274;
+    border: 3px solid #5a9d21;
+    border-radius: 2em;
+    box-shadow: 6px 6px #8a35d554;
+    text-align:center;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item img {
+    width:50%;
+}
+
+.addition {
+    grid-area: addition;
+}
+.subtraction {
+    grid-area: subtraction;
+}
+.multiplication {
+    grid-area: multiplication;
+}
+.division {
+    grid-area: division;
 }
