@@ -1,3 +1,42 @@
-<p>
-  progress-report works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Sidenav -->
+    <div id="sidenav" class="col-sm-3 green-tint-bg row">
+      <h2 class="col-sm-12">Progress Reports</h2>
+      <h3 class="col-sm-12">Date Range</h3>
+
+      <span class="col-12 col-lg-5">Start Date</span>
+      <input type="date" id="startDate" class="col-10 col-lg-7">
+
+      <span class="col-12 col-lg-5">End Date</span>
+      <input type="date" id="endDate" class="col-10 col-lg-7">
+
+      <h3 class="col-sm-12">Topic</h3>
+      <select name="topic" id="sTopic" class="col-sm-10">
+        <option value="all">All</option>
+        <option value="addition">Addition</option>
+        <option value="subtraction">Subtraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+      </select>
+
+      <h3 class="col-sm-12">Source</h3>
+      <select name="source" id="sSource" class="col-sm-10">
+        <option value="all">All</option>
+        <option value="learn">Learn</option>
+        <option value="lightning">Lightning Round</option>
+        <option value="homework">Homework</option>
+        <option value="tests">Tests & Quizzes</option>
+        <option value="challenges">Challenges</option>
+      </select>
+
+      <button routerLink="/reports/results">Generate Report</button>
+    </div>
+
+    <!-- Main content -->
+    <div id="mainContent" class="col-md-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

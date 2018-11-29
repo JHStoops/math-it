@@ -13,6 +13,9 @@ import { ProgressReportComponent } from './progress-report/progress-report.compo
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
+import { ProgressReportSavedComponent } from './progress-report-saved/progress-report-saved.component';
+import { ProgressReportResultsComponent } from './progress-report-results/progress-report-results.component';
+import { ProgressReportShareComponent } from './progress-report-share/progress-report-share.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { HomeComponent } from './home/home.component';
     ProgressReportComponent,
     QuizTestComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ProgressReportSavedComponent,
+    ProgressReportResultsComponent,
+    ProgressReportShareComponent
   ],
   imports: [
     BrowserModule,
