@@ -1,32 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 .green-tint-text {
-  color: #e0efd4;
+  color: #a7e274;
 }
 .green-key-text {
   color: #7fd535;
 }
 .green-shade-text {
-  color: #439816;
+  color: #5a9d21;
 }
 .purple-contrast-text {
-  color: #682D63;
+  color: #8b35d5;
 }
 .blue-contrast-text {
-  color: #414288;
+  color: #d58b35;
 }
 
 .green-tint-bg {
-  background-color: #e0efd4;
+  background-color: #a7e274;
 }
 .green-key-bg {
   background-color: #7fd535;
 }
 .green-shade-bg {
-  background-color: #439816;
+  background-color: #5a9d21;
 }
 .purple-contrast-bg {
-  background-color: #682D63;
+  background-color: #8b35d5;
 }
 .blue-contrast-bg {
-  background-color: #414288;
+  background-color: #d58b35;
 }
