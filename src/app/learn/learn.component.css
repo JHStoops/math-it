@@ -1,0 +1,18 @@
+.operation {
+  grid-area: op;
+  border-radius: 25px;
+  color: white;
+  border: 5px solid 	seagreen;
+  background-color: 	mediumseagreen;
+  padding: 20px;
+}
+
+.operationContainer {
+  grid-template-columns: 200px 200px;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: 
+    "op op"
+    "op op"
+}
