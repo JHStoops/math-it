@@ -1,0 +1,23 @@
+<!-- Top Nav -->
+<div class="container-fluid green-tint-bg">
+  <ul class="nav nav-tabs">
+    <li id="nav-logo" class="nav-item"><img src="assets/Logo.PNG" width="64px" height="64px"></li>
+    <li id="nav-title" class="nav-item">MathIt</li>
+    <li class="nav-item" *ngFor="let item of navItems"> <!-- [ngIf]="isLoggedIn == true"> -->
+      <a class="nav-link"
+         [ngClass]="{'active': item.name == activePage}"
+         routerLink="{{item.link}}" routerLinkActive="router-link-active">
+         {{item.name}}
+      </a>
+    </li>
+
+    <li id="login-session" class="nav-item ml-auto">Hi Bobby</li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Logout</a>
+    </li>
+  </ul>
+
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>
