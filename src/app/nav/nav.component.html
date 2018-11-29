@@ -1,6 +1,9 @@
 <!-- Top Nav -->
 <nav class="navbar navbar-expand-lg navbar-light green-tint-bg">
-  <a id="nav-logo" class="navbar-brand" routerLink="/"><img src="assets/Logo.PNG" width="64px" height="64px"><span id="nav-title" class="nav-item">MathIt</span></a>
+  <a class="navbar-brand" routerLink="/">
+    <img src="assets/Logo.PNG" id="nav-logo" width="64px" height="64px">
+    <span id="nav-title" class="nav-item">MathIt</span>
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsableContent">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,7 +11,7 @@
   <div class="collapse navbar-collapse" id="collapsableContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" *ngFor="let item of navItems"> <!-- [ngIf]="isLoggedIn == true"> -->
-        <a class="nav-link"
+        <a class="nav-link purple-contrast-text"
            [ngClass]="{'active': item.name == activePage}"
            routerLink="{{item.link}}" routerLinkActive="router-link-active">
           {{item.name}}
@@ -16,7 +19,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <p>Hi, Bobby!</p>
+      <span class="purple-contrast-text">Hi, Bobby!</span>
       <a class="nav-link" routerLink="/login">Logout</a>
     </form>
   </div>

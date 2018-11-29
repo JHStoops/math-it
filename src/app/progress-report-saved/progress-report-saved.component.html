@@ -1,0 +1,7 @@
+<div class="container">
+    <h2>Saved Report</h2>
+    <div class="row" *ngFor="let report of savedReports" >
+        <span class="col-4">{{report.name}}</span>
+        <button class="col-1" routerLink="/reports/results" [queryParams]="report">Go</button>
+    </div>
+</div>
