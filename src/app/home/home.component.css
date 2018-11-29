@@ -1,0 +1,52 @@
+
+
+.grid {
+    display:grid;
+    /* grid-area: 33 33 33; */
+    grid-template-areas: 'lightning learn homework'
+                          'quiz compete report';
+    grid-gap: 1.5em;
+    /* grid-row-gap: .75em; */
+    color: #8b35d5;
+    padding:12px;
+}
+
+.item {
+    /* width:; */
+    /* height:200px; */
+    padding:2em;
+    /* width:100px; */
+    background-color: #a7e274;
+    border: 3px solid #5a9d21;
+    border-radius: 2em;
+    box-shadow: 6px 6px #8a35d554;
+}
+
+.item:hover {
+    /* grid-area: box; */
+    cursor: pointer;
+    
+}
+
+.item img {
+    width:45%;
+}
+
+.lightning {
+    grid-area: lightning;
+}
+.learn {
+    grid-area: learn;
+}
+.homework {
+    grid-area: homework;
+}
+.quiz {
+    grid-area: quiz;
+}
+.compete {
+    grid-area: compete;
+}
+.report {
+    grid-area: report;
+}
