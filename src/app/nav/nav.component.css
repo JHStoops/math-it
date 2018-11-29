@@ -6,6 +6,7 @@
     font-size: 49px;
     font-weight: bold;
     margin:  0 0 0 10px;
+    color: black;
   }
   #nav-menu {
     display: inline-block;
@@ -23,4 +24,3 @@
   .nav-item {
     margin-top: auto;
   }
-  
