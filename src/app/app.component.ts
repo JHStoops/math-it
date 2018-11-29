@@ -10,11 +10,11 @@ export class AppComponent {
   activePage = 'Home';
   isLoggedIn = true;
   navItems = [
-    {"name": "Lightning Round", "link": "#"},
-    {"name": "Learn", "link": "#"},
-    {"name": "Homework", "link": "#"},
-    {"name": "Quiz & Test", "link": "#"},
-    {"name": "Compete", "link": "#"},
-    {"name": "Reports", "link": "#"}
+    {"name": "Lightning Round", "link": "/lightning-round"},
+    {"name": "Learn", "link": "/learn"},
+    {"name": "Homework", "link": "/homework"},
+    {"name": "Quiz & Test", "link": "/quiz-test"},
+    {"name": "Compete", "link": "/compete"},
+    {"name": "Reports", "link": "/reports"}
   ];
 }
