@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   title = 'math-it';
-  activePage = 'Home';
-  isLoggedIn = true;
+
   navItems = [
     {"name": "Lightning Round", "link": "/lightning-round"},
     {"name": "Learn", "link": "/learn"},
@@ -21,6 +20,7 @@ export class NavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
