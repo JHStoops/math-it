@@ -1,0 +1,47 @@
+.grid {
+    display:grid;
+    grid-template-areas: 'l_col middle r_col'
+                          'l_col middle r_col'
+                          'l_col questions r_col';
+}
+
+.l_col  {
+    grid-area: l_col;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.r_col{
+    grid-area: r_col;
+    width: 100px;
+}
+
+.questions {
+    grid-area: questions;
+    display:flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 200px 1fr
+    
+}
+
+.q_box {
+    /* flex: 1 1 150px; */
+    width:100px;
+    margin:10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 75px;
+    background-color: #a7e274;
+    border: 3.5px solid #5a9d21;
+    box-shadow: 6px 6px #8a35d531;
+    
+}
+
+.q_box:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px #8a35d560;
+    border: 3.5px solid #d58b35;
+}
+
