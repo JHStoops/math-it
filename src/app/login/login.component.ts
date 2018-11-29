@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +7,9 @@ import { LoginService } from '../services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(loginService: LoginService) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  toggleLogin() {
-    loginService.isLoggedIn != loginService.isLoggedIn;
   }
 
 }

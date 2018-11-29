@@ -1,15 +1,15 @@
 <div class="container-fluid">
   <div id="fLogin" class="row justify-content-md-center">
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 card">
-      <div class="card-body">
-        <label for="username">Username</label>
-        <input id="username" type="text"><br>
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 card container">
+      <div class="card-body row">
+        <label for="username" class="col-12">Username</label>
+        <input id="username" class="col-12" type="text"><br>
 
-        <label for="username">Password</label>
-        <input id="username" type="text">
-        <input type="checkbox"> Remember Me
+        <label for="username" class="col-12">Password</label>
+        <input id="username" class="col-12" type="password">
+        <span class="col-12"><input type="checkbox"> Remember Me</span>
 
-        <button id="bLogin" routerLink="/" (click)="toggleLogin()">Log In</button>
+        <button id="bLogin" class="col-12" routerLink="/">Log In</button>
       </div>
     </div>
   </div>
