@@ -1,3 +1,28 @@
-<p>
-  progress-report-results works!
-</p>
+<div id="results-reports" class="container-fluid green-tint-bg">
+  <div class="row">
+    <h2 class="col-12">Progress Report</h2>
+  </div>
+  <div class="row">
+    <div class="col-3"><h3>Topic:</h3><span>{{ report.topic }}</span></div>
+    <div class="col-3"><h3>Source:</h3><span>{{ report.source}}</span></div>
+  </div>
+  <hr>
+  <div class="row" *ngIf="report.source === 'all'">
+    <h3 class="col-3">Total Grade:</h3><span class="col-3">{{ scores.total }}%</span>
+  </div>
+  <div class="row" *ngIf="report.source === 'all' || report.source === 'homework'">
+    <h3 class="col-3">Homework Grade:</h3><span class="col-3">{{ scores.homework }}%</span>
+  </div>
+  <div class="row" *ngIf="report.source === 'all' || report.source === 'learn'">
+    <h3 class="col-3">Learn Grade:</h3><span class="col-3">{{ scores.learn }}%</span>
+  </div>
+  <div class="row" *ngIf="report.source === 'all' || report.source === 'lightning'">
+    <h3 class="col-3">Lightning Grade:</h3><span class="col-3">{{ scores.lightning }}%</span>
+  </div>
+  <div class="row" *ngIf="report.source === 'all' || report.source === 'tests'">
+    <h3 class="col-3">Tests Grade:</h3><span class="col-3">{{ scores.tests }}%</span>
+  </div>
+  <div class="row" *ngIf="report.source === 'all' || report.source === 'challenges'">
+    <h3 class="col-3">Challenges Grade:</h3><span class="col-3">{{ scores.challenges }}%</span>
+  </div>
+</div>

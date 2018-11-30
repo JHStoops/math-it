@@ -2,36 +2,48 @@
   <div class="row">
 
     <!-- Sidenav -->
-    <div id="sidenav" class="col-sm-3 green-tint-bg row">
-      <h2 class="col-sm-12">Progress Reports</h2>
-      <h3 class="col-sm-12">Date Range</h3>
+    <div id="sidenav" class="col-sm-2 green-tint-bg">
+      <div class="row">
+        <h2 class="col-sm-12">Progress Reports</h2>
+      </div>
+      <div class="row">
+        <h3 class="col-sm-12">Date Range</h3>
 
-      <span class="col-12 col-lg-5">Start Date</span>
-      <input type="date" id="startDate" class="col-10 col-lg-7">
+        <span class="col-10 col-lg-4">Start Date</span>
+        <input type="date" id="startDate" [(ngModel)]="report.startDate" class="col-10 col-lg-6" >
 
-      <span class="col-12 col-lg-5">End Date</span>
-      <input type="date" id="endDate" class="col-10 col-lg-7">
+        <span class="col-10 col-lg-4">End Date</span>
+        <input type="date" id="endDate" [(ngModel)]="report.endDate" class="col-10 col-lg-6">
+      </div>
 
-      <h3 class="col-sm-12">Topic</h3>
-      <select name="topic" id="sTopic" class="col-sm-10">
-        <option value="all">All</option>
-        <option value="addition">Addition</option>
-        <option value="subtraction">Subtraction</option>
-        <option value="multiplication">Multiplication</option>
-        <option value="division">Division</option>
-      </select>
+      <div class="row">
+        <h3 class="col-12">Topic</h3>
 
-      <h3 class="col-sm-12">Source</h3>
-      <select name="source" id="sSource" class="col-sm-10">
-        <option value="all">All</option>
-        <option value="learn">Learn</option>
-        <option value="lightning">Lightning Round</option>
-        <option value="homework">Homework</option>
-        <option value="tests">Tests & Quizzes</option>
-        <option value="challenges">Challenges</option>
-      </select>
+        <select name="topic" id="sTopic" [(ngModel)]="report.topic" class="col-9">
+          <option value="all">All</option>
+          <option value="addition">Addition</option>
+          <option value="subtraction">Subtraction</option>
+          <option value="multiplication">Multiplication</option>
+          <option value="division">Division</option>
+        </select>
+      </div>
 
-      <button routerLink="/reports/results">Generate Report</button>
+      <div class="row">
+        <h3 class="col-12">Source</h3>
+
+        <select name="source" id="sSource" [(ngModel)]="report.source" class="col-9">
+          <option value="all">All</option>
+          <option value="learn">Learn</option>
+          <option value="lightning">Lightning Round</option>
+          <option value="homework">Homework</option>
+          <option value="tests">Tests & Quizzes</option>
+          <option value="challenges">Challenges</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <button routerLink="/reports/results" [queryParams]="generateURLQuery()">Generate Report</button>
+      </div>
     </div>
 
     <!-- Main content -->

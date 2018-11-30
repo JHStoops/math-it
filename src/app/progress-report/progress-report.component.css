@@ -4,6 +4,15 @@
   padding: 10px;
   margin: 10px 0 0 10px;
 }
+#sidenav select {
+  margin: 0 0 0 15px;
+}
+#sidenav .row {
+  margin-bottom: 10px;
+}
+#sidenav .row button{
+  margin-left: 15px;
+}
 #mainContent {
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
 }
