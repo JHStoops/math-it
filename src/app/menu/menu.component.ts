@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Menu } from '../models/menu.model';
+// import { Menu } from '../models/menu.model';
 
 @Component({
   selector: 'app-menu',
@@ -7,20 +7,18 @@ import { Menu } from '../models/menu.model';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  @Input() itemsToDisplay: Array<Menu>;
+  @Input() itemsToDisplay;
+  @Input() columns;
+
+  col: number;
 
   constructor() {
-    this.itemsToDisplay = [
-      {
-        link: '',
-        title: 'Main Title',
-        img: '../assets/img/Quiz-Games.png',
-        subtitle: 'Subtitle'
-      }
-    ]
+    
+
    }
 
   ngOnInit() {
+    this.col = 12 / this.columns;
   }
 
 }

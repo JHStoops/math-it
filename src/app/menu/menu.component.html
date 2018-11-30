@@ -1,7 +1,13 @@
-<ul *ngFor="let item of itemsToDisplay">
-  <li class="menu-button" routerLink="/{{item.link}}">
-    <h2>{{item.title}}</h2>
-    <img [src]="item.img">
-    <h3>{{item.subtitle}}</h3>
-  </li>
-</ul>
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of itemsToDisplay">
+      <div class="col-sm-{{col}} spacing" routerLink="/{{item.link}}">
+        <div class="item">
+          <h2>{{item.title}}</h2>
+          <img [src]="item.img">
+          <h3>{{item.subtitle}}</h3>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

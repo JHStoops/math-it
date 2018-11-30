@@ -21,6 +21,8 @@ import { HelpComponent } from './homework/help/help.component';
 import { TestComponent } from './quiz-test/test/test.component';
 import { QuizComponent } from './quiz-test/quiz/quiz.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +46,8 @@ import { QuizComponent } from './quiz-test/quiz/quiz.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

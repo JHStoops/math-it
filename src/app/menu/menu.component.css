@@ -1,0 +1,19 @@
+.spacing {
+    padding:12px;
+}
+
+.item {
+    padding:2em;
+    background-color: #33f2ff;
+    border: 3px solid darkcyan;
+    box-shadow: 6px 6px #8a35d554;
+    text-align: center;
+}
+
+.item img {
+    width:45%;
+}
+
+.item:hover {
+    cursor: pointer;
+}
