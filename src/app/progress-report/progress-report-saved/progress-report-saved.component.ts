@@ -9,21 +9,21 @@ export class ProgressReportSavedComponent implements OnInit {
 
     savedReports = [
         {
-            name: 'tests from August',
-            startDate: '2018-08-01',
-            endDate: '2018-08-30',
+            name: 'Tests from November',
+            startDate: '2018-11-01',
+            endDate: '2018-11-30',
             topic: 'all',
             source: 'tests'
         },
         {
-            name: 'challenges since August',
-            startDate: '2018-08-01',
+            name: 'Challenges since November',
+            startDate: '2018-11-01',
             topic: 'all',
             source: 'challenges'
         },
         {
-            name: 'Homework score since August',
-            startDate: '2018-08-01',
+            name: 'Homework score since November',
+            startDate: '2018-11-01',
             topic: 'All',
             source: 'homework'
         },

@@ -10,7 +10,7 @@
 
   <div class="collapse navbar-collapse" id="collapsableContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item" *ngFor="let item of navItems"> <!-- [ngIf]="isLoggedIn == true"> -->
+      <li class="nav-item purple-contrast-text" *ngFor="let item of navItems"> <!-- [ngIf]="isLoggedIn == true"> -->
         <a class="nav-link purple-contrast-text"
            [ngClass]="{'active': item.name == activePage}"
            routerLink="{{item.link}}" routerLinkActive="router-link-active">
@@ -19,8 +19,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <span class="purple-contrast-text">Hi, Bobby!</span>
-      <a class="nav-link" routerLink="/login">Logout</a>
+      <button type="button" class="btn btn-primary" routerLink="/login">Logout</button>
     </form>
   </div>
 </nav>

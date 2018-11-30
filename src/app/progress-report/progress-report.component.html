@@ -2,18 +2,18 @@
   <div class="row">
 
     <!-- Sidenav -->
-    <div id="sidenav" class="col-sm-2 green-tint-bg">
+    <div id="sidenav" class="col-md-2 green-tint-bg">
       <div class="row">
         <h2 class="col-sm-12">Progress Reports</h2>
       </div>
       <div class="row">
         <h3 class="col-sm-12">Date Range</h3>
 
-        <span class="col-10 col-lg-4">Start Date</span>
-        <input type="date" id="startDate" [(ngModel)]="report.startDate" class="col-10 col-lg-6" >
+        <span class="col-12">Start Date</span>
+        <input type="date" id="startDate" [(ngModel)]="report.startDate" class="col-9" >
 
-        <span class="col-10 col-lg-4">End Date</span>
-        <input type="date" id="endDate" [(ngModel)]="report.endDate" class="col-10 col-lg-6">
+        <span class="col-12">End Date</span>
+        <input type="date" id="endDate" [(ngModel)]="report.endDate" class="col-9">
       </div>
 
       <div class="row">
@@ -42,7 +42,7 @@
       </div>
 
       <div class="row">
-        <button routerLink="/reports/results" [queryParams]="generateURLQuery()">Generate Report</button>
+        <button class="btn btn-primary" routerLink="/reports/results" [queryParams]="generateURLQuery()">Generate Report</button>
       </div>
     </div>
 

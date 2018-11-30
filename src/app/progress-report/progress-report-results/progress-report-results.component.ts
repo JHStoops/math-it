@@ -43,7 +43,7 @@ export class ProgressReportResultsComponent implements OnInit {
     const self = this;
     function reducer(acc, el){
       if (source !== 'all') return acc + el.grade / data.length;
-      if (["homework", "learn", "lightning"].includes(el.source)) return acc + el.grade * 0.2 / self.numberOf(data, el.source);
+      if (el.source === "homework" || el.source === "learn" || el.source ===  "lightning") return acc + el.grade * 0.2 / self.numberOf(data, el.source);
       if (el.source === "tests") return acc + el.grade * 0.4 / self.numberOf(data, el.source);
       if (el.source === "challenges") return acc + el.grade * 0.05 / self.numberOf(data, el.source);
       return acc;
@@ -62,17 +62,14 @@ export class ProgressReportResultsComponent implements OnInit {
           Test:     40%
           Challenge: 5% (bonus)
      */
-    this.scores.total = this.getScore(     this.filterData(this.report.source, this.report.topic), 'all');
-    this.scores.learn = this.getScore(     this.filterData('learn', this.report.topic), 'learn');
-    this.scores.lightning = this.getScore( this.filterData('lightning', this.report.topic), 'lightning');
-    this.scores.homework = this.getScore(  this.filterData('lightning', this.report.topic), 'homework');
-    this.scores.tests = this.getScore(     this.filterData('homework', this.report.topic), 'tests');
-    this.scores.challenges = this.getScore(this.filterData('challenges', this.report.topic), 'challenges');
-    console.table(this.scores);
-
+    this.scores.total = Number(this.getScore(     this.filterData(this.report.source, this.report.topic), 'all'));
+    this.scores.learn = Number(this.getScore(     this.filterData('learn', this.report.topic), 'learn'));
+    this.scores.lightning = Number(this.getScore( this.filterData('lightning', this.report.topic), 'lightning'));
+    this.scores.homework = Number(this.getScore(  this.filterData('lightning', this.report.topic), 'homework'));
+    this.scores.tests = Number(this.getScore(     this.filterData('homework', this.report.topic), 'tests'));
+    this.scores.challenges = Number(this.getScore(this.filterData('challenges', this.report.topic), 'challenges'));
   }
 
-  expectedScore: 0.85;
   scores = {
     total: 0,
     learn: 0,

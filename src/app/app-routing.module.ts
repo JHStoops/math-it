@@ -8,7 +8,6 @@ import { LoginComponent } from './login/login.component';
 import { ProgressReportComponent } from './progress-report/progress-report.component';
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
 import { HomeComponent } from './home/home.component';
-import {ProgressReportShareComponent} from "./progress-report/progress-report-share/progress-report-share.component";
 import {ProgressReportResultsComponent} from "./progress-report/progress-report-results/progress-report-results.component";
 import {ProgressReportSavedComponent} from "./progress-report/progress-report-saved/progress-report-saved.component";
 import { PastGradesComponent } from './homework/past-grades/past-grades.component';
@@ -71,11 +70,6 @@ const routes: Routes = [
                 path: 'results',
                 component: ProgressReportResultsComponent,
                 data: {title: 'Progress Reports Results'}
-            },
-            {
-                path: 'share',
-                component: ProgressReportShareComponent,
-                data: {title: 'Share Progress Reports'}
             }
         ]
     },
