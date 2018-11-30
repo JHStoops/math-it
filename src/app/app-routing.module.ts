@@ -5,13 +5,14 @@ import { HomeworkComponent } from './homework/homework.component';
 import { LearnComponent } from './learn/learn.component';
 import { LightningRoundComponent } from './lightning-round/lightning-round.component';
 import { LoginComponent } from './login/login.component';
-import { MenuComponent } from './menu/menu.component';
 import { ProgressReportComponent } from './progress-report/progress-report.component';
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
 import { HomeComponent } from './home/home.component';
 import {ProgressReportShareComponent} from "./progress-report/progress-report-share/progress-report-share.component";
 import {ProgressReportResultsComponent} from "./progress-report/progress-report-results/progress-report-results.component";
 import {ProgressReportSavedComponent} from "./progress-report/progress-report-saved/progress-report-saved.component";
+import { PastGradesComponent } from './homework/past-grades/past-grades.component';
+import { HelpComponent } from './homework/help/help.component';
 
 const routes: Routes = [
     {
@@ -27,7 +28,19 @@ const routes: Routes = [
     {
         path: 'homework',
         component: HomeworkComponent,
-        data: {title: 'Homework'}
+        data: {title: 'Homework'},
+        children: [
+            {
+                path: 'past-grades',
+                component: PastGradesComponent,
+                data: {title: 'Past Grades'}
+            },
+            {
+                path: 'help',
+                component: HelpComponent,
+                data: {title: 'Homework Help'}
+            }
+        ]
     },
     {
         path: 'learn',

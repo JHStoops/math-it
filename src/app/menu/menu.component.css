@@ -4,6 +4,7 @@
 
 .item {
     padding:2em;
+    height: 350px;
     background-color: #33f2ff;
     border: 3px solid darkcyan;
     box-shadow: 6px 6px #8a35d554;
