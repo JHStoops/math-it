@@ -16,6 +16,10 @@ import { HomeComponent } from './home/home.component';
 import { ProgressReportSavedComponent } from './progress-report-saved/progress-report-saved.component';
 import { ProgressReportResultsComponent } from './progress-report-results/progress-report-results.component';
 import { ProgressReportShareComponent } from './progress-report-share/progress-report-share.component';
+import { PastGradesComponent } from './homework/past-grades/past-grades.component';
+import { HelpComponent } from './homework/help/help.component';
+import { TestComponent } from './quiz-test/test/test.component';
+import { QuizComponent } from './quiz-test/quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { ProgressReportShareComponent } from './progress-report-share/progress-r
     HomeComponent,
     ProgressReportSavedComponent,
     ProgressReportResultsComponent,
-    ProgressReportShareComponent
+    ProgressReportShareComponent,
+    PastGradesComponent,
+    HelpComponent,
+    TestComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
