@@ -13,9 +13,9 @@ import { ProgressReportComponent } from './progress-report/progress-report.compo
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
-import { ProgressReportSavedComponent } from './progress-report-saved/progress-report-saved.component';
-import { ProgressReportResultsComponent } from './progress-report-results/progress-report-results.component';
-import { ProgressReportShareComponent } from './progress-report-share/progress-report-share.component';
+import { ProgressReportSavedComponent } from './progress-report/progress-report-saved/progress-report-saved.component';
+import { ProgressReportResultsComponent } from './progress-report/progress-report-results/progress-report-results.component';
+import { ProgressReportShareComponent } from './progress-report/progress-report-share/progress-report-share.component';
 import { PastGradesComponent } from './homework/past-grades/past-grades.component';
 import { HelpComponent } from './homework/help/help.component';
 import { TestComponent } from './quiz-test/test/test.component';

@@ -9,9 +9,9 @@ import { MenuComponent } from './menu/menu.component';
 import { ProgressReportComponent } from './progress-report/progress-report.component';
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
 import { HomeComponent } from './home/home.component';
-import {ProgressReportShareComponent} from "./progress-report-share/progress-report-share.component";
-import {ProgressReportResultsComponent} from "./progress-report-results/progress-report-results.component";
-import {ProgressReportSavedComponent} from "./progress-report-saved/progress-report-saved.component";
+import {ProgressReportShareComponent} from "./progress-report/progress-report-share/progress-report-share.component";
+import {ProgressReportResultsComponent} from "./progress-report/progress-report-results/progress-report-results.component";
+import {ProgressReportSavedComponent} from "./progress-report/progress-report-saved/progress-report-saved.component";
 
 const routes: Routes = [
     {
