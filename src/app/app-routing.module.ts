@@ -12,6 +12,8 @@ import {ProgressReportResultsComponent} from "./progress-report/progress-report-
 import {ProgressReportSavedComponent} from "./progress-report/progress-report-saved/progress-report-saved.component";
 import { PastGradesComponent } from './homework/past-grades/past-grades.component';
 import { HelpComponent } from './homework/help/help.component';
+import { PracticeComponent } from './learn/practice/practice.component';
+import { TutorialComponent } from './learn/tutorial/tutorial.component';
 
 const routes: Routes = [
     {
@@ -44,7 +46,19 @@ const routes: Routes = [
     {
         path: 'learn',
         component: LearnComponent,
-        data: {title: 'Learn'}
+        data: {title: 'Learn'},
+		children: [
+		    {
+                path: 'practice',
+                component: PracticeComponent,
+                data: {title: 'Practice'}
+            },
+            {
+                path: 'tutorial',
+                component: TutorialComponent,
+                data: {title: 'Tutorial'}
+            }
+		]
     },
     {
         path: 'lightning-round',

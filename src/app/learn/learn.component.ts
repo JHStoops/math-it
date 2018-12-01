@@ -8,25 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class LearnComponent implements OnInit {
   menuItems = [
     {
-      link: '',
+      link: 'learn/tutorial',
       title: 'Addition',
       img: '../../assets/img/Plus.png',
       subtitle: '',
     },
     {
-      link: '',
+      link: 'learn/tutorial',
       title: 'Subtraction',
       img: '../../assets/img/Subtract.png',
       subtitle: '',
     },
     {
-      link: '',
+      link: 'learn/tutorial',
       title: 'Multiplication',
       img: '../../assets/img/Multiply.png',
       subtitle: '',
     },
     {
-      link: '',
+      link: 'learn/practice',
       title: 'Division',
       img: '../../assets/img/Divide.png',
       subtitle: '',
