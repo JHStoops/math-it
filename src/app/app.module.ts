@@ -23,6 +23,7 @@ import { QuizComponent } from './quiz-test/quiz/quiz.component';
 import { PracticeComponent } from './learn/practice/practice.component';
 import { TutorialComponent } from './learn/tutorial/tutorial.component';
 import { CanvasComponent } from './learn/practice/canvas/canvas.component';
+import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { CanvasComponent } from './learn/practice/canvas/canvas.component';
     QuizComponent,
     PracticeComponent,
     TutorialComponent,
-    CanvasComponent
+    CanvasComponent,
+    LearnMenuComponent
   ],
   imports: [
     BrowserModule,
