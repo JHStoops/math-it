@@ -4,7 +4,7 @@
 
 .item {
     padding:2em;
-    height: 350px;
+    height: 200px;
     background-color: #33f2ff;
     border: 3px solid darkcyan;
     box-shadow: 6px 6px #8a35d554;
@@ -12,7 +12,8 @@
 }
 
 .item img {
-    width:45%;
+    height: 50%;
+    
 }
 
 .item:hover {

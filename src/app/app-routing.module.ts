@@ -14,6 +14,7 @@ import { PastGradesComponent } from './homework/past-grades/past-grades.componen
 import { HelpComponent } from './homework/help/help.component';
 import { PracticeComponent } from './learn/practice/practice.component';
 import { TutorialComponent } from './learn/tutorial/tutorial.component';
+import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
 
 const routes: Routes = [
     {
@@ -48,6 +49,11 @@ const routes: Routes = [
         component: LearnComponent,
         data: {title: 'Learn'},
 		children: [
+			{
+				path: '',
+				component: LearnMenuComponent,
+				data: {title: 'Category selection'}
+			},
 		    {
                 path: 'practice',
                 component: PracticeComponent,
