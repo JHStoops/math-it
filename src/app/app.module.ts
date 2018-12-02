@@ -24,6 +24,7 @@ import { PracticeComponent } from './learn/practice/practice.component';
 import { TutorialComponent } from './learn/tutorial/tutorial.component';
 import { CanvasComponent } from './learn/practice/canvas/canvas.component';
 import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
