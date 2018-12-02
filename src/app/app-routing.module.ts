@@ -15,6 +15,8 @@ import { HelpComponent } from './homework/help/help.component';
 import { PracticeComponent } from './learn/practice/practice.component';
 import { TutorialComponent } from './learn/tutorial/tutorial.component';
 import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
+import { CompeteClassComponent } from './compete/compete-class/compete-class.component';
+import { CompeteMainComponent } from './compete/compete-main/compete-main.component';
 
 const routes: Routes = [
     {
@@ -25,7 +27,19 @@ const routes: Routes = [
     {
         path: 'compete',
         component: CompeteComponent,
-        data: {title: 'Compete'}
+        data: {title: 'Compete'},
+		children : [
+		{
+			path: '',
+			component: CompeteMainComponent,
+			data: {title : 'Compete'}
+		},
+		{
+			path: 'class',
+			component: CompeteClassComponent,
+			data: {title : 'Vs Class'}
+		}
+		]
     },
     {
         path: 'homework',

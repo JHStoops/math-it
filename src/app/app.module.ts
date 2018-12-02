@@ -25,6 +25,8 @@ import { TutorialComponent } from './learn/tutorial/tutorial.component';
 import { CanvasComponent } from './learn/practice/canvas/canvas.component';
 import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CompeteClassComponent } from './compete/compete-class/compete-class.component';
+import { CompeteMainComponent } from './compete/compete-main/compete-main.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PracticeComponent,
     TutorialComponent,
     CanvasComponent,
-    LearnMenuComponent
+    LearnMenuComponent,
+    CompeteClassComponent,
+    CompeteMainComponent
   ],
   imports: [
     BrowserModule,
