@@ -1,6 +1,11 @@
 #saved-reports {
   height: 100%;
-  border: 1px solid #5a9d21;
+  background-color: #33f2ff;
+  border: 3px solid darkcyan;
+  box-shadow: 6px 6px #8a35d554;
   padding: 10px;
   margin: 0 0 0 0;
+}
+#individualReports {
+  margin: 5px;
 }
