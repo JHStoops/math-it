@@ -23,7 +23,7 @@
     width:50%;
 }
 .canvas {
-    grid-area: diagram;
+    grid-area: canvas;
 }
 .content {
     grid-area: content;
