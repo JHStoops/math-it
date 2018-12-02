@@ -1,7 +1,7 @@
-<div id="saved-reports" class="container-fluid green-tint-bg">
+<div id="saved-reports" class="container-fluid">
   <div class="row">
     <h2 class="col-12 col-sm-10">Saved Report</h2>
-    <div class="col-12 row" *ngFor="let report of savedReports" >
+    <div id="individualReports" class="col-12 row" *ngFor="let report of savedReports" >
       <span class="col-4">{{report.name}}</span>
       <button class="col-1" routerLink="/reports/results" [queryParams]="report">Go</button>
     </div>
