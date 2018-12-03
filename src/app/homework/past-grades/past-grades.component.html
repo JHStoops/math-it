@@ -1,3 +1,39 @@
-<p>
-  past-grades works!
-</p>
+<h2>Past Grades</h2>
+
+<div class="row">
+  <div class="col-sm">
+    <b><p>Grade</p></b>
+  </div>
+  <div class="col-sm">
+    <b><p>Score</p></b>
+  </div>
+  <div class="col-sm">
+    <b><p>Homework Assignment</p></b>
+  </div>
+</div>
+<div class="row row-grade" *ngFor="let grade of grades" (click)="open(comments, grade.comments)">
+  <div class="col-sm">
+    <img *ngIf="grade.grade == 'A+'" src="../../../assets/img/Grade.png">
+  </div>
+  <div class="col-sm">
+    <p>{{grade.score}}</p>
+  </div>
+  <div class="col-sm">
+    <p>{{grade.assignment}}</p>
+  </div>
+</div>
+
+<ng-template #comments let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Comments From Teacher</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>{{selectedGrade}}</p>
+  </div>
+  <div class="modal-footer">
+    
+  </div>
+</ng-template>
