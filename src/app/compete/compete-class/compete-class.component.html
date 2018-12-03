@@ -1,3 +1,30 @@
-<p>
-  compete-class works!
-</p>
+<div class="container">
+	<div class="row">
+		<h4>Playing against Billy</h4>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <p>Round: {{ index }}</p>
+            <p>Goal:  {{ problems[topic].length }}</p>
+            <p *ngIf="correctAnswers > 0">You have {{ correctAnswers }} correct answers!</p>
+            <p>Time Left:</p>
+          <app-timer></app-timer>
+			<p>Billy completed these problems in 4:43</p>
+
+        </div>
+        <div class="col-6" *ngIf="index < problems[topic].length">
+            <div class="problem d-flex justify-content-center">
+                <div>{{displayProblem(problems[topic][index])}}</div>
+            </div>
+            <div class="d-flex justify-content-center row">
+                <div class="q_box col-12 col-md-2" (click)="assessAnswer(answer)" *ngFor="let answer of problems[topic][index].multipleChoice">{{ answer }}</div>
+            </div>
+        </div>
+        <div id="finishedMessage" class="col-6" *ngIf="index >= problems[topic].length">
+            <p>Billy answered 8 problems correctly</p>
+			<p *ngIf="correctAnswers < 8">Billy won</p>
+			<p *ngIf="correctAnswers >  8">You won</p>
+			<p *ngIf="correctAnswers == 8">You've tied with Billy</p>
+        </div>
+    </div>
+</div>
