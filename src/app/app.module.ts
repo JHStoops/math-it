@@ -17,7 +17,6 @@ import { HomeComponent } from './home/home.component';
 import { ProgressReportSavedComponent } from './progress-report/progress-report-saved/progress-report-saved.component';
 import { ProgressReportResultsComponent } from './progress-report/progress-report-results/progress-report-results.component';
 import { PastGradesComponent } from './homework/past-grades/past-grades.component';
-import { HelpComponent } from './homework/help/help.component';
 import { TestComponent } from './quiz-test/test/test.component';
 import { QuizComponent } from './quiz-test/quiz/quiz.component';
 import { PracticeComponent } from './learn/practice/practice.component';
@@ -46,7 +45,6 @@ import { LightningRoundPracticeComponent } from './lightning-round/lightning-rou
     ProgressReportSavedComponent,
     ProgressReportResultsComponent,
     PastGradesComponent,
-    HelpComponent,
     TestComponent,
     QuizComponent,
     PracticeComponent,
