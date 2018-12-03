@@ -1,6 +1,7 @@
 .grid {
     display:grid;
     grid-template-areas: 'content canvas';
+	grid-template-columns: 15 70 15;
     grid-gap: 1.5em;
     color: #8b35d5;
     padding:12px;
