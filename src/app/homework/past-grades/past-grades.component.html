@@ -11,7 +11,7 @@
     <b><p>Homework Assignment</p></b>
   </div>
 </div>
-<div class="row row-grade" *ngFor="let grade of grades" (click)="open(comments)">
+<div class="row row-grade" *ngFor="let grade of grades" (click)="open(comments, grade.comments)">
   <div class="col-sm">
     <img *ngIf="grade.grade == 'A+'" src="../../../assets/img/Grade.png">
   </div>
@@ -31,7 +31,7 @@
     </button>
   </div>
   <div class="modal-body">
-    <p>Great work! =)</p>
+    <p>{{selectedGrade}}</p>
   </div>
   <div class="modal-footer">
     

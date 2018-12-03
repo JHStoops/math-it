@@ -17,6 +17,8 @@ import { TutorialComponent } from './learn/tutorial/tutorial.component';
 import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
 import { CompeteClassComponent } from './compete/compete-class/compete-class.component';
 import { CompeteMainComponent } from './compete/compete-main/compete-main.component';
+import { QuizComponent } from './quiz-test/quiz/quiz.component';
+import { TestComponent } from './quiz-test/test/test.component';
 
 const routes: Routes = [
     {
@@ -109,7 +111,17 @@ const routes: Routes = [
         path: 'quiz-test',
         component: QuizTestComponent,
         data: {title: 'Quiz Test'}
-    }
+    },
+    {
+        path: 'quiz-test/quiz',
+        component: QuizComponent,
+        data: {title: 'Quiz'}
+    },
+    {
+        path: 'quiz-test/test',
+        component: TestComponent,
+        data: {title: 'Test'}
+    },
 
 ];
 

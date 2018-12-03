@@ -8,22 +8,26 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class PastGradesComponent implements OnInit {
   closeResult: string;
+  selectedGrade;
 
   grades = [
     {
       grade: 'A+',
       score: '10/10',
-      assignment: 'Addition'
+      assignment: 'Addition',
+      comments: 'Great work! =)'
     },
     {
       grade: 'A+',
       score: '10/10',
-      assignment: 'Multiplication'
+      assignment: 'Multiplication',
+      comments: 'Perfect!'
     },
     {
       grade: 'A+',
       score: '10/10',
-      assignment: 'Division'
+      assignment: 'Division',
+      comments: 'Awesome!!'
     },
   ]
 
@@ -32,16 +36,13 @@ export class PastGradesComponent implements OnInit {
   ngOnInit() {
   }
 
-  open(content) {
+  open(content, grade) {
+    this.selectedGrade = grade;
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
-  }
-
-  openLg(content) {
-    this.modalService.open(content, { size: 'lg' });
   }
 
   private getDismissReason(reason: any): string {
