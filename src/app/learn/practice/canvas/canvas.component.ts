@@ -9,18 +9,21 @@ import { switchMap, takeUntil, pairwise } from 'rxjs/operators'
 
 @Component({
   selector: 'app-canvas',
-  template: '<canvas #canvas></canvas>',
+  template: '<canvas  *ngIf="someBool" #canvas></canvas><br><button class="btn btn-primary" type="button" (click)="clear()">Clear</button>',
   styles: ['canvas { border: 1px solid #000; }']
 })
 export class CanvasComponent implements AfterViewInit {
 
   @ViewChild('canvas') public canvas: ElementRef;
 
+  
   @Input() public width = 400;
   @Input() public height = 400;
 
   private cx: CanvasRenderingContext2D;
-
+  
+	public someBool: boolean = true;
+	
   public ngAfterViewInit() {
     const canvasEl: HTMLCanvasElement = this.canvas.nativeElement;
     this.cx = canvasEl.getContext('2d');
@@ -73,6 +76,10 @@ export class CanvasComponent implements AfterViewInit {
       });
   }
 
+  private clear(){
+	  this.cx.clearRect(0, 0, this.width, this.height);
+  }
+  
   private drawOnCanvas(prevPos: { x: number, y: number }, currentPos: { x: number, y: number }) {
     if (!this.cx) { return; }
 
