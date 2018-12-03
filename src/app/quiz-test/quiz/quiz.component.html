@@ -1,3 +1,23 @@
-<p>
-  quiz works!
-</p>
+<div class="container">
+    <h2>Multiplication Quiz</h2>
+    <div class="row">
+        <div class="col-2">
+            <p>Questions Left: {{ problems.length - index }}</p>
+            <p>Total Questions:  {{ problems.length }}</p>
+            <p>Time Left:</p>
+            <img src="/assets/img/time_left.PNG" alt="">
+        </div>
+        <div class="col-6" *ngIf="index < problems.length">
+            <div class="problem d-flex justify-content-center">
+                <div>{{problems[index].first}} * {{problems[index].second}} = </div>
+            </div>
+            <div class="d-flex justify-content-center row">
+                <div class="q_box col-12 col-md-2" (click)="assessAnswer(answer)" *ngFor="let answer of problems[index].multipleChoice">{{ answer }}</div>
+            </div>
+        </div>
+        <div id="finishedMessage" class="col-6" *ngIf="index >= problems.length">
+          <p>All done!</p>
+          <p>Your score: {{correctAnswers}} / {{problems.length}}</p>
+        </div>
+    </div>
+  </div>

@@ -12,7 +12,7 @@ export class QuizTestComponent implements OnInit {
       link: 'quiz-test/quiz',
       title: 'Current Quiz',
       img: '../assets/img/CurrentQuiz.png',
-      subtitle: 'Order of Operations',
+      subtitle: 'Multiplication',
     },
     {
       link: 'quiz-test/test',
