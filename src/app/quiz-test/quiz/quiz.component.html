@@ -5,7 +5,7 @@
             <p>Questions Left: {{ problems.length - index }}</p>
             <p>Total Questions:  {{ problems.length }}</p>
             <p>Time Left:</p>
-            <img src="/assets/img/time_left.PNG" alt="">
+            <app-timer></app-timer>
         </div>
         <div class="col-6" *ngIf="index < problems.length">
             <div class="problem d-flex justify-content-center">

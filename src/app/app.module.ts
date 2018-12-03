@@ -30,6 +30,7 @@ import { LightningRoundMenuComponent } from './lightning-round/lightning-round-m
 import { LightningRoundPracticeComponent } from './lightning-round/lightning-round-practice/lightning-round-practice.component';
 import { CurrentHomeworkComponent } from './homework/current-homework/current-homework.component';
 import { CompeteSelectComponent } from './compete/compete-select/compete-select.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { CompeteSelectComponent } from './compete/compete-select/compete-select.
     LightningRoundMenuComponent,
     LightningRoundPracticeComponent,
     CurrentHomeworkComponent,
-    CompeteSelectComponent
+    CompeteSelectComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

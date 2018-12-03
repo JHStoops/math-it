@@ -8,7 +8,7 @@
             <p>Goal:  {{ problems[topic].length }}</p>
             <p *ngIf="correctAnswers > 0">You have {{ correctAnswers }} correct answers!</p>
             <p>Time Left:</p>
-            <img src="/assets/img/time_left.PNG" alt="">
+          <app-timer></app-timer>
 			<p>Billy completed these problems in 4:43</p>
 
         </div>
