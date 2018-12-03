@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeworkComponent implements OnInit {
   menuItems = [
     {
-      link: 'homework',
+      link: 'homework/current-homework',
       title: 'Current Homework',
       img: '../../assets/img/TimesCircle.png',
-      subtitle: 'Times Tables',
+      subtitle: 'Algebra Intro',
     },
     {
       link: 'homework/past-grades',

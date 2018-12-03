@@ -28,6 +28,7 @@ import { CompeteClassComponent } from './compete/compete-class/compete-class.com
 import { CompeteMainComponent } from './compete/compete-main/compete-main.component';
 import { LightningRoundMenuComponent } from './lightning-round/lightning-round-menu/lightning-round-menu.component';
 import { LightningRoundPracticeComponent } from './lightning-round/lightning-round-practice/lightning-round-practice.component';
+import { CurrentHomeworkComponent } from './homework/current-homework/current-homework.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { LightningRoundPracticeComponent } from './lightning-round/lightning-rou
     CompeteClassComponent,
     CompeteMainComponent,
     LightningRoundMenuComponent,
-    LightningRoundPracticeComponent
+    LightningRoundPracticeComponent,
+    CurrentHomeworkComponent
   ],
   imports: [
     BrowserModule,
