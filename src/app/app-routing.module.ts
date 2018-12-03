@@ -4,12 +4,14 @@ import { CompeteComponent } from './compete/compete.component';
 import { HomeworkComponent } from './homework/homework.component';
 import { LearnComponent } from './learn/learn.component';
 import { LightningRoundComponent } from './lightning-round/lightning-round.component';
+import { LightningRoundMenuComponent } from './lightning-round/lightning-round-menu/lightning-round-menu.component';
+import { LightningRoundPracticeComponent } from './lightning-round/lightning-round-practice/lightning-round-practice.component';
 import { LoginComponent } from './login/login.component';
 import { ProgressReportComponent } from './progress-report/progress-report.component';
 import { QuizTestComponent } from './quiz-test/quiz-test.component';
 import { HomeComponent } from './home/home.component';
-import {ProgressReportResultsComponent} from "./progress-report/progress-report-results/progress-report-results.component";
-import {ProgressReportSavedComponent} from "./progress-report/progress-report-saved/progress-report-saved.component";
+import { ProgressReportResultsComponent } from './progress-report/progress-report-results/progress-report-results.component';
+import { ProgressReportSavedComponent } from './progress-report/progress-report-saved/progress-report-saved.component';
 import { PastGradesComponent } from './homework/past-grades/past-grades.component';
 import { HelpComponent } from './homework/help/help.component';
 import { PracticeComponent } from './learn/practice/practice.component';
@@ -83,7 +85,16 @@ const routes: Routes = [
     {
         path: 'lightning-round',
         component: LightningRoundComponent,
-        data: {title: 'Lightning Round Component'}
+        children: [
+            {
+                path: '',
+                component: LightningRoundMenuComponent
+            },
+            {
+                path: ':topic',
+                component: LightningRoundPracticeComponent
+            }
+        ]
     },
     {
         path: 'login',

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <p>Round: {{ index }}</p>
+            <p>Goal:  {{ problems[topic].length }}</p>
+            <p *ngIf="correctAnswers > 0">You have {{ correctAnswers }} correct answers!</p>
+            <p>Time Left:</p>
+            <img src="/assets/img/time_left.PNG" alt="">
+        </div>
+        <div class="col-6" *ngIf="index < problems[topic].length">
+            <div class="problem d-flex justify-content-center">
+                <div>{{displayProblem(problems[topic][index])}}</div>
+            </div>
+            <div class="d-flex justify-content-center row">
+                <div class="q_box col-12 col-md-2" (click)="assessAnswer(answer)" *ngFor="let answer of problems[topic][index].multipleChoice">{{ answer }}</div>
+            </div>
+        </div>
+        <div id="finishedMessage" class="col-6" *ngIf="index >= problems[topic].length">
+            <p>Great job!</p>
+        </div>
+    </div>
+</div>

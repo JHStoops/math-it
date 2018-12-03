@@ -27,6 +27,8 @@ import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CompeteClassComponent } from './compete/compete-class/compete-class.component';
 import { CompeteMainComponent } from './compete/compete-main/compete-main.component';
+import { LightningRoundMenuComponent } from './lightning-round/lightning-round-menu/lightning-round-menu.component';
+import { LightningRoundPracticeComponent } from './lightning-round/lightning-round-practice/lightning-round-practice.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { CompeteMainComponent } from './compete/compete-main/compete-main.compon
     CanvasComponent,
     LearnMenuComponent,
     CompeteClassComponent,
-    CompeteMainComponent
+    CompeteMainComponent,
+    LightningRoundMenuComponent,
+    LightningRoundPracticeComponent
   ],
   imports: [
     BrowserModule,
