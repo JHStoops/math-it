@@ -1,6 +1,7 @@
 .grid {
     display:grid;
-    grid-template-areas: 'diagram content';
+    grid-template-areas: '. diagram content .';
+	grid-template-columns: 10% 25% 30% 10%;
     grid-gap: 1.5em;
     color: #8b35d5;
     padding:12px;
