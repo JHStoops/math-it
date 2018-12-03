@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class CompeteMainComponent implements OnInit {
   menuItems = [
     {
-      link: 'compete/class',
+      link: 'compete/select',
       title: 'Vs. Class',
       img: '../../assets/img/Class.png',
       subtitle: '',
     },
     {
-      link: 'compete/class',
+      link: 'compete/select',
       title: 'Vs. World',
       img: '../../assets/img/World.png',
       subtitle: '',

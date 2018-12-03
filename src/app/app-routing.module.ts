@@ -21,6 +21,7 @@ import { CompeteMainComponent } from './compete/compete-main/compete-main.compon
 import { QuizComponent } from './quiz-test/quiz/quiz.component';
 import { TestComponent } from './quiz-test/test/test.component';
 import { CurrentHomeworkComponent } from './homework/current-homework/current-homework.component';
+import { CompeteSelectComponent } from './compete/compete-select/compete-select.component';
 
 const routes: Routes = [
     {
@@ -33,16 +34,20 @@ const routes: Routes = [
         component: CompeteComponent,
         data: {title: 'Compete'},
 		children : [
-		{
-			path: '',
-			component: CompeteMainComponent,
-			data: {title : 'Compete'}
-		},
-		{
-			path: 'class',
-			component: CompeteClassComponent,
-			data: {title : 'Vs Class'}
-		}
+			{
+				path: '',
+				component: CompeteMainComponent,
+				data: {title : 'Compete'}
+			},
+			{
+				path: 'select',
+				component: CompeteSelectComponent,
+				data: {title : 'Select category'},
+			},
+			{
+				path: ':topic',
+				component: CompeteClassComponent,
+			}
 		]
     },
     {
