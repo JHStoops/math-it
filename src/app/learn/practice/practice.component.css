@@ -1,12 +1,11 @@
 .grid {
     display:grid;
     grid-template-areas: 'content canvas';
-	grid-template-columns: 15 70 15;
+	grid-template-columns: 15% 70% 15%;
     grid-gap: 1.5em;
     color: #8b35d5;
     padding:12px;
 }
-
 .item {
     padding:2em;
     background-color: #a7e274;
@@ -28,4 +27,28 @@
 }
 .content {
     grid-area: content;
+}
+
+.problem{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.q_box {
+    /* flex: 1 1 150px; */
+    width:100px;
+    margin:10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 75px;
+    background-color: #33f2ff;
+    border: 3px solid darkcyan;
+    box-shadow: 6px 6px #8a35d531;
+
+}
+
+.q_box:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px #8a35d560;
+    border: 3.5px solid #d58b35;
 }

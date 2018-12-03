@@ -1,9 +1,26 @@
 <h1>Learn it</h1>
 <div class="grid">
 	<div class="content">
-		<p>
-			At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-		</p>
+	
+<div class="container">
+    <div class="row">
+        <div class="col-12" *ngIf="index < problems[topic].length">
+            <div class="problem d-flex justify-content-center">
+                <div>{{displayProblem(problems[topic][index])}}</div>
+            </div>
+            <div class="justify-content-center row">
+                <div class="q_box col-6"  (click)="assessAnswer(answer)" *ngFor="let answer of problems[topic][index].multipleChoice">{{ answer }}</div>
+            </div>
+        </div>
+        <div id="finishedMessage" class="justify-content-center row col-12" *ngIf="index >= problems[topic].length">
+            <h1>Great job!</h1>
+			<br>
+			<h4>Goal:  {{ problems[topic].length }}</h4>
+			<br>
+            <h4 class="justify-content-center row col-12" *ngIf="correctAnswers > 0">You have {{ correctAnswers }} correct answers!</h4>
+        </div>
+    </div>
+</div>
 	</div>
 	<div class="canvas">
 		<h3>Write in the area below to work out your answer</h3>
@@ -11,6 +28,5 @@
 		<br>
 		<button class="btn btn-primary" type="button" onClick="window.location.reload()">Clear</button> 
 	</div>
-	
 </div>
 
