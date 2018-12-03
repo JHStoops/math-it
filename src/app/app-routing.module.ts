@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { ProgressReportResultsComponent } from './progress-report/progress-report-results/progress-report-results.component';
 import { ProgressReportSavedComponent } from './progress-report/progress-report-saved/progress-report-saved.component';
 import { PastGradesComponent } from './homework/past-grades/past-grades.component';
-import { HelpComponent } from './homework/help/help.component';
 import { PracticeComponent } from './learn/practice/practice.component';
 import { TutorialComponent } from './learn/tutorial/tutorial.component';
 import { LearnMenuComponent } from './learn/learn-menu/learn-menu.component';
@@ -54,11 +53,6 @@ const routes: Routes = [
         path: 'homework/past-grades',
         component: PastGradesComponent,
         data: {title: 'Past Grades'}
-    },
-    {
-        path: 'homework/help',
-        component: HelpComponent,
-        data: {title: 'Homework Help'}
     },
     {
         path: 'learn',
