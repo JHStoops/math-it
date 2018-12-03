@@ -1,0 +1,31 @@
+a {
+    color: #148d96
+}
+
+.problem, #finishedMessage {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.q_box {
+    /* flex: 1 1 150px; */
+    width:100px;
+    margin:10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 75px;
+    background-color: #33f2ff;
+    border: 3px solid darkcyan;
+    box-shadow: 6px 6px #8a35d531;
+
+}
+
+.q_box:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px #8a35d560;
+    border: 3.5px solid #d58b35;
+}
+
+img {
+    width: 100%;
+}

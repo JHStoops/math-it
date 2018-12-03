@@ -17,7 +17,6 @@ import { HomeComponent } from './home/home.component';
 import { ProgressReportSavedComponent } from './progress-report/progress-report-saved/progress-report-saved.component';
 import { ProgressReportResultsComponent } from './progress-report/progress-report-results/progress-report-results.component';
 import { PastGradesComponent } from './homework/past-grades/past-grades.component';
-import { HelpComponent } from './homework/help/help.component';
 import { TestComponent } from './quiz-test/test/test.component';
 import { QuizComponent } from './quiz-test/quiz/quiz.component';
 import { PracticeComponent } from './learn/practice/practice.component';
@@ -29,6 +28,7 @@ import { CompeteClassComponent } from './compete/compete-class/compete-class.com
 import { CompeteMainComponent } from './compete/compete-main/compete-main.component';
 import { LightningRoundMenuComponent } from './lightning-round/lightning-round-menu/lightning-round-menu.component';
 import { LightningRoundPracticeComponent } from './lightning-round/lightning-round-practice/lightning-round-practice.component';
+import { CurrentHomeworkComponent } from './homework/current-homework/current-homework.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +46,6 @@ import { LightningRoundPracticeComponent } from './lightning-round/lightning-rou
     ProgressReportSavedComponent,
     ProgressReportResultsComponent,
     PastGradesComponent,
-    HelpComponent,
     TestComponent,
     QuizComponent,
     PracticeComponent,
@@ -56,7 +55,8 @@ import { LightningRoundPracticeComponent } from './lightning-round/lightning-rou
     CompeteClassComponent,
     CompeteMainComponent,
     LightningRoundMenuComponent,
-    LightningRoundPracticeComponent
+    LightningRoundPracticeComponent,
+    CurrentHomeworkComponent
   ],
   imports: [
     BrowserModule,
