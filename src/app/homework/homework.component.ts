@@ -20,7 +20,7 @@ export class HomeworkComponent implements OnInit {
       subtitle: '',
     },
     {
-      link: 'homework/help',
+      link: 'learn',
       title: 'Help',
       img: '../../assets/img/Help.png',
       subtitle: '',
