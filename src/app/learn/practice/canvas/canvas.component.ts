@@ -16,14 +16,14 @@ export class CanvasComponent implements AfterViewInit {
 
   @ViewChild('canvas') public canvas: ElementRef;
 
-  
+
   @Input() public width = 400;
   @Input() public height = 400;
 
   private cx: CanvasRenderingContext2D;
-  
+
 	public someBool: boolean = true;
-	
+
   public ngAfterViewInit() {
     const canvasEl: HTMLCanvasElement = this.canvas.nativeElement;
     this.cx = canvasEl.getContext('2d');
@@ -37,7 +37,7 @@ export class CanvasComponent implements AfterViewInit {
 
     this.captureEvents(canvasEl);
   }
-  
+
   private captureEvents(canvasEl: HTMLCanvasElement) {
     // this will capture all mousedown events from the canvas element
     fromEvent(canvasEl, 'mousedown')
@@ -47,39 +47,39 @@ export class CanvasComponent implements AfterViewInit {
           return fromEvent(canvasEl, 'mousemove')
             .pipe(
               // we'll stop (and unsubscribe) once the user releases the mouse
-              // this will trigger a 'mouseup' event    
+              // this will trigger a 'mouseup' event
               takeUntil(fromEvent(canvasEl, 'mouseup')),
               // we'll also stop (and unsubscribe) once the mouse leaves the canvas (mouseleave event)
               takeUntil(fromEvent(canvasEl, 'mouseleave')),
               // pairwise lets us get the previous value to draw a line from
-              // the previous point to the current point    
+              // the previous point to the current point
               pairwise()
             )
         })
       )
       .subscribe((res: [MouseEvent, MouseEvent]) => {
         const rect = canvasEl.getBoundingClientRect();
-  
+
         // previous and current position with the offset
         const prevPos = {
           x: res[0].clientX - rect.left,
           y: res[0].clientY - rect.top
         };
-  
+
         const currentPos = {
           x: res[1].clientX - rect.left,
           y: res[1].clientY - rect.top
         };
-  
+
         // this method we'll implement soon to do the actual drawing
         this.drawOnCanvas(prevPos, currentPos);
       });
   }
 
-  private clear(){
+  public clear(){
 	  this.cx.clearRect(0, 0, this.width, this.height);
   }
-  
+
   private drawOnCanvas(prevPos: { x: number, y: number }, currentPos: { x: number, y: number }) {
     if (!this.cx) { return; }
 
