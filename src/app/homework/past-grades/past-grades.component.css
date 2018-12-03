@@ -1,0 +1,22 @@
+.row p, .row b {
+    text-align: center;
+}
+
+.row-grade {
+    background-color: #27e9f7;
+    margin: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    border: solid 1px gray;
+}
+
+.row-grade:hover {
+    background-color: #68f5ff;
+    cursor: pointer;
+}
+
+img {
+    margin: auto;
+    display: block;
+    height: 50px;
+}

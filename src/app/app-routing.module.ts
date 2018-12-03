@@ -45,18 +45,16 @@ const routes: Routes = [
         path: 'homework',
         component: HomeworkComponent,
         data: {title: 'Homework'},
-        children: [
-            {
-                path: 'past-grades',
-                component: PastGradesComponent,
-                data: {title: 'Past Grades'}
-            },
-            {
-                path: 'help',
-                component: HelpComponent,
-                data: {title: 'Homework Help'}
-            }
-        ]
+    },
+    {
+        path: 'homework/past-grades',
+        component: PastGradesComponent,
+        data: {title: 'Past Grades'}
+    },
+    {
+        path: 'homework/help',
+        component: HelpComponent,
+        data: {title: 'Homework Help'}
     },
     {
         path: 'learn',
