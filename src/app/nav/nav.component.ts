@@ -9,7 +9,7 @@ export class NavComponent implements OnInit {
   title = 'math-it';
 
   navItems = [
-    {"name": "Lightning Round", "link": "/lightning-round"},
+    {"name": "Lightning Round", "link": "/"},
     {"name": "Learn", "link": "/learn"},
     {"name": "Homework", "link": "/homework"},
     {"name": "Quiz & Test", "link": "/quiz-test"},
